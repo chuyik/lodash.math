@@ -1,0 +1,25 @@
+{
+  "name": "lodash.math",
+  "main": "lodash.math.js",
+  "homepage": "https://github.com/Delapouite/lodash.math",
+  "authors": [
+    "https://github.com/Delapouite"
+  ],
+  "description": "Lo-dash extension providing math / stats operations on collections.",
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "lodash": "*"
+  },
+  "_release": "51c825e6d4",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "51c825e6d42444ed988c365abebbf29111a019a6"
+  },
+  "_source": "git://github.com/chuyik/lodash.math.git",
+  "_target": "*",
+  "_originalSource": "chuyik/lodash.math",
+  "_direct": true
+}
