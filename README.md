@@ -9,6 +9,7 @@ It's based on [underscore.math](https://github.com/Delapouite/underscore.math) w
 
 - average (mean)
 - median
+- mode
 - movingAverage
 - power
 - round

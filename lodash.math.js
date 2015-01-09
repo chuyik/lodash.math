@@ -19,6 +19,24 @@
     return (sorted.length % 2) ? sorted[middle - 1] : (sorted[middle - 1.5] + sorted[middle - 0.5]) / 2;
   };
 
+  // math.mode([3,5,6,6,6,8.2,8.2,8.2,9])
+  //   => [6,8.2]
+  math.mode = function(arr) {
+    var max = 0,
+        mode = [],
+        counted = _.countBy(arr);
+
+    max = _.max(_.values(counted));
+
+    _.forIn(counted, function(v,k){
+      if(v === max){
+        mode.push(parseFloat(k));
+      }
+    });
+
+    return mode;
+  };
+
   // Power, exponent
   // math.pow(2,3)
   //   => 8

@@ -82,6 +82,16 @@ test("Arrays", function() {
   deepEqual( noMutate, [4, 3, 2, 1], "Original array not mutated" );
 });
 
+module("Mode");
+
+test("Arrays", function() {
+  expect(4);
+  deepEqual( _.mode([0, 0, 0, 0, 5]), [0], "Mode of 0" );
+  deepEqual( _.mode([0, 0, 1, 2, 5]), [0], "Mode of 5 numbers" );
+  deepEqual( _.mode([3,5,8.2,8.2,8.2,9]), [8.2], "Mode of float numbers" );
+  deepEqual( _.mode([3,5,6,6,6,8.2,8.2,8.2,9]), [6,8.2], "Mode of two results" );
+});
+
 module("Variance");
 
 test("Arrays", function() {
